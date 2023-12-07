@@ -41,6 +41,7 @@ dbConn.connect(function (err) {
     throw err;
   }
   console.log("Database was connected");
+  console.log(dbConn);
   require("./routes")({ app, dbConn, upload });
   app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
