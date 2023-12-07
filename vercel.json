@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds": [
+    {
+        "src": "D:./artzone/back/server/routes/index.js",
+        "use0": "@vercel/node"
+    }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
+    ]
+}
