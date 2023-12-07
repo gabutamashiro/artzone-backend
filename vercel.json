@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
     {
-        "src": "D:./artzone/back/server/routes/index.js",
+        "src": "./index.js",
         "use0": "@vercel/node"
     }
     ],
