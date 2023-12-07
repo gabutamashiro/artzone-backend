@@ -28,6 +28,7 @@ module.exports = function ({ app, dbConn, upload }) {
   });
 
   app.get('/posts', (req, res) => {
+    res.status(200).jsonp(dbConn);
     const getPostsSql = "SELECT * FROM post ORDER BY post_created_date DESC";
     dbConn.query(getPostsSql, function (error, posts) {
       if (posts) {
